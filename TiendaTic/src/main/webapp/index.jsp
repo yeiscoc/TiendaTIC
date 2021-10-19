@@ -30,7 +30,7 @@
 		
 				
 			</div>
-						<form id="formLogin" action="usuario" method="post">
+						<form id="formLogin" method="get" action="./Usuario">
 							<input type="hidden" name="tipo" value="iniciarSesion" />
 									
 									
@@ -38,7 +38,7 @@
 								<div class="input-group-prepend">
 									<span class="input-group-text"><i class="fas fa-user"></i></span>
 								</div>
-										<input type="text" class="form-control" name="nombre_usuario" required="required" placeholder="Nombre de usuario" />
+										<input type="text" class="form-control" name="usuario" required="required" placeholder="Nombre de usuario" />
 									</div>
 									
 									<div class="input-group form-group">
@@ -49,8 +49,8 @@
 										
 										<input type="password" class="form-control" name="clave" required="required" placeholder="Contraseña" />
 									</div>
+									<input type="submit" name= "accion" value="Ingresar" class="btn btn-success btn-block btn-dark">
 									
-									<button type="submit" class="btn btn-success btn-block btn-dark">INGRESAR</button>
 							
 						</form>
 							
